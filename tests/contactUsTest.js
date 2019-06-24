@@ -1,5 +1,4 @@
 browser
-    .init()
     .setViewportSize({
       width: 1200,
       height: 800
@@ -11,4 +10,3 @@ browser
     })
     .click('#contact-us')
     .pause(3000)
-    .end();
