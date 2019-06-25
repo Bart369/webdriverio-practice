@@ -9,7 +9,7 @@
   "author": "BP",
   "license": "ISC",
   "dependencies": {
-    "mocha": "^5.2.0",
+    "mocha": "^6.1.4",
     "selenium-standalone": "^6.15.3",
     "webdriverio": "^4.13.2"
   },
