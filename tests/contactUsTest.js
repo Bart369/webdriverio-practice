@@ -10,4 +10,3 @@ browser
     })
     .click('#contact-us')
     .pause(3000)
-    .end();
