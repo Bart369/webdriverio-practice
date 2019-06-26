@@ -15,7 +15,7 @@ describe("Verify whether webdriveruniversity links on homepage work correctly", 
 	});
 
 	it("check that the login button opens the login portal page", function(done) {
-			browser.url('/')  // "/" parameter will use the baseUrl set in the config file 
+			browser.url('/')  // "/" parameter will use the baseUrl set in the config file.
 			browser.click('#login-portal')
 			var title = browser.getTitle();
 			assert.strictEqual(title, 'WebDriverUniversity.com')
