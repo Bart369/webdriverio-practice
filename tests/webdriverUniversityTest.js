@@ -4,15 +4,15 @@ describe("Verify whether webdriveruniversity links on homepage work correctly", 
 				width: 1200,
 				height: 800
 			})
-			browser.url('http://www.webdriveruniversity.com/')
+			browser.url('/') 		// We stored the URL in the baseUrl variable in the config file
 			var title = browser.getTitle();
-				console.log('Title is: ' + title);
+			console.log('Title is: ' + title);
 			browser.click("#contact-us")
 			browser.pause(3000)
 	});
 
 	it("check that the login button opens the login portal page", function(done) {
-			browser.url('https://webdriveruniversity.com')
+			browser.url('/')
 			browser.click('#login-portal')
 			var title = browser.getTitle();
 			console.log('Title is: ' + title);
