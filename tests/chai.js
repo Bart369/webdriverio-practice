@@ -1,4 +1,4 @@
-var assert = require('chai').assert;
+var assert = require('chai').assert; //this Node's standard assert functionality
 var expect = require('chai').expect;
 var should = require('chai').should();
 
@@ -10,4 +10,4 @@ assert.equal(actual, expected);
 expect(actual).to.equal(expected);
 actual.should.equal(expected);
 
-// Run the following to only test these tests "npm test -- --spec/tests/chai.js"
+// Run the following to only test these tests "npm test -- --spec=tests/chai.js"
