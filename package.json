@@ -4,23 +4,24 @@
   "description": "Webdriverio Framework practice",
   "main": "index.js",
   "scripts": {
-    "test": "wdio"   
+    "test": "wdio"
   },
   "author": "BP",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
     "mocha": "^6.1.4",
     "selenium-standalone": "^6.15.3",
-    "wdio-selenium-standalone-service": "0.0.12", 
+    "wdio-selenium-standalone-service": "0.0.12",
     "webdriverio": "^4.13.2"
   },
   "devDependencies": {
     "wdio-mocha-framework": "^0.6.4"
   },
   "_comments": {
-      "scripts": {
-        "test": "wdio -  Our tests will now run with the command npm test"
-      },
-      "wdio-selenium-standalone-service": "0.0.12 -  We do not need a selenium server running in the back everytime now"
+    "scripts": {
+      "test": "wdio -  Our tests will now run with the command npm test"
+    },
+    "wdio-selenium-standalone-service": "0.0.12 -  We do not need a selenium server running in the back everytime now"
   }
 }
