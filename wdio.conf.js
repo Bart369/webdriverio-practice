@@ -8,6 +8,11 @@ else {
     baseUrl = 'http://www.webdriveruniversity.com';
 }
 
+var timeout = process.env.DEBUG ? 99999999 : 10000;
+// ^ instructs our test to use a longer wait time when in debug mode.
+// we added the timeout variable to the "mochaOpts" object below so that Mocha is aware of it 
+// waitforTimeout option below allwos you to set the globale time for all waitFor commands
+
 
 
 exports.config = {
@@ -140,7 +145,8 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        timeout: timeout
     },
     //
     // =====
