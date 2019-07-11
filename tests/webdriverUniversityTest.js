@@ -1,5 +1,5 @@
-var expect = require('chai').expect;
-var should = require('chai').should();
+// var expect = require('chai').expect;  So that we don't have to insert these into every file, they've been placed in config's before hook
+// var should = require('chai').should();
 
 // var assert = require('assert'); *** nodejs assertions which we will not use. We use the chai assertion aboves
 
