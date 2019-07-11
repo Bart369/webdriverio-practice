@@ -13,4 +13,6 @@ describe('Test that the button is clickable once the Ajax loader completes loadi
   });
 })
 
-//only the second test will run because of the ".only"
+//Mocha methods:
+// it.only the second test will run because of the ".only"
+// it.skip will obviously skip the test
