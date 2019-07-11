@@ -10,10 +10,11 @@ describe("Verify whether webdriveruniversity links on homepage work correctly", 
 				height: 600
 			})
 			browser.url('/') 		// We stored the URL in the baseUrl variable in the config file and we are keeping our code dry by not repeaing the url
-			var title = browser.getTitle();
-			// assert.strictEqual(title, 'WebDriverUniversity.com') *** this node assertion got replaced by chai line 15 *** strict compares the two variables, fails if they are not equal.
+            var title = browser.getTitle();
+            // assert.strictEqual(title, 'WebDriverUniversity.com') *** this node assertion got replaced by chai line 15 *** strict compares the two variables, fails if they are not equal.
 			expect(title).to.equal('WebDriverUniversity.com');
-			console.log('Title is: ' + title);
+            console.log('Title is: ' + title);
+            //browser.debug() *** DEBUG=true npm test -- --spec=webdriverUniversityTest.js
 			browser.click("#contact-us")
 			browser.pause(3000)
 	});
