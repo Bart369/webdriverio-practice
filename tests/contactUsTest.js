@@ -7,6 +7,10 @@ beforeEach(function () {
 // because we have already defined this as our base URL in our WDIO.conf file
 
 describe('Test Contact Us form WebdriverUni.', function () {
+    beforeEach(function() {
+        console.log('Inside the describe block!');
+    })
+
     it('Should be able to submit a successful submission via contact us form', function (done) {
         browser.setValue("[name='first_name']", 'Joe');
         browser.setValue("[name='last_name']", 'Blogs');
