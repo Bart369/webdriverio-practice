@@ -15,17 +15,24 @@ describe("Verify whether webdriveruniversity links on homepage work correctly", 
 			expect(title).to.equal('WebDriverUniversity.com');
             console.log('Title is: ' + title);
             //browser.debug() *** DEBUG=true npm test -- --spec=webdriverUniversityTest.js.
-			browser.click("#contact-us")
-			browser.pause(3000)
+            browser.click("#contact-us")
+            var tabIds = browser.getTabIds();
+            console.log(tabIds);
+            browser.switchTab(tabIds[1]);
+            browser.pause(3000);
+            browser.close();
 	});
 
 	it("check that the login button opens the login portal page", function(done) {
 			browser.url('/')  // "/" parameter will use the baseUrl set in the config file.
-			browser.click('#login-portal')
+		
 			var title = browser.getTitle();
 			// assert.strictEqual(title, 'WebDriverUniversity.com') *** this node assertion got replaced by chai line 26
 			title.should.equal('WebDriverUniversity.com');
-			console.log('Title is: ' + title);
+            console.log('Title is: ' + title);
+            browser.click('#login-portal')
+            var tabIds = browser.getTabIds();            
+            browser.switchTab(tabIds[1]);
 			browser.pause(3000)
 	})
 });
